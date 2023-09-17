@@ -1,0 +1,122 @@
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    color: #0099ff;
+}
+.kitob{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+}
+.kitob:hover{
+    background-color: #262525;
+    color: #fff;
+    box-shadow: 5px 5px 12px 2px rgb(139, 140, 143);
+}
+.kitob img{
+    width: 200px;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.kitob h1{
+    font-size: 20px;
+}
+
+
+
+
+.muallif{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    border-radius: 15px;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    transition: 0.8s;
+}
+.muallif:hover{
+    box-shadow: 5px 10px 12px 2px rgb(139, 140, 143);
+}
+.muallif-img{
+    font-size: 150px;
+    color: rgb(87, 87, 87);
+}
+.muallif h1{
+    font-size: 28px;
+}
+.ksoni{
+    border-bottom: 1px solid#000;
+}
+
+
+.topilmadi{
+    transition: 1s;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    position: relative;
+    transition: 1s;
+  }
+  .loader:before {
+      content: '';
+      width: 48px;
+      height: 5px;
+      background: #000;
+      opacity: 0.25;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      border-radius: 50%;
+      animation: shadow 0.5s linear infinite;
+    }
+    .loader:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgb(156, 156, 156);
+      animation: bxSpin 0.5s linear infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 4px;
+    }
+  @keyframes bxSpin {
+    17% {
+      border-bottom-right-radius: 3px;
+    }
+    25% {
+      transform: translateY(9px) rotate(22.5deg);
+    }
+    50% {
+      transform: translateY(18px) scale(1, .9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+    }
+    75% {
+      transform: translateY(9px) rotate(67.5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+
+  @keyframes shadow {
+    0%, 100% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1);
+    }
+  }
+

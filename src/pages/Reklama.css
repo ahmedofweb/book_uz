@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambay:wght@100;200;300;400;500;600;700&display=swap");
+
+
+
+body{
+    scrollbar-color: red;
+}
+.reklama{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.card {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 24px;
+    position: relative;
+    font-family: 'Cambay', sans-serif;
+    box-shadow: 5px 5px 10px 10px rgb(231, 235, 248);
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.5s;
+}
+.card:hover{
+    max-width: 800px;
+}
+
+.card:hover .info{
+    display: block;
+}
+.card:hover .save-books{
+    flex-direction: row;
+}
+.image {
+    width: 300px;
+    height: 470px;
+    box-shadow: 5px 5px 10px 10px rgb(231, 235, 248);
+    margin-right: 50px;
+    transition: 0.5s;
+}
+.image img{
+    width: 300px;
+    height: 470px;
+    transition: 0.5s;
+}
+.info {
+    display: none;
+    transition: 0.5s;
+}
+.short-info {
+    margin-bottom: auto;
+}
+.name{
+    font-size: 50px;
+}
+.price{
+    font-size: 40px;
+    color: #0099ff;
+    margin-bottom: 0;
+}
+.status{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.year{
+    font-size: 20px;
+}
+.author{
+    font-size: 20px;
+}
+.more{
+    color: red;
+    border-bottom: 1px solid rgb(255, 0, 0);
+}
+.save-books {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    gap: 20px;
+    font-size: 20px;
+}
+.liked {
+    border: none;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.liked:active i{
+   transform: scale(1.2);
+}
+.color-red{
+    color: red;
+}
+.basket{
+    width: 100%;
+    max-width: 200px;
+    display: none;
+    border: none;
+    gap: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.basket:active span{
+    opacity: 0.1;
+}
+.basket:active i{
+    animation: walking 0.3s;
+}
+
+
+
+@keyframes walking {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(80px);
+    }
+}
