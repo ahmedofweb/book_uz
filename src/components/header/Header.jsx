@@ -47,7 +47,7 @@ function Header() {
           
         </div>
 
-        <a className="connection" href="">
+        <a className="connection" href="tel:+998-91-123-45-16">
           <p>+998911234516</p>
           <button>
             Bog'lanish

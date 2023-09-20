@@ -52,7 +52,6 @@ function Reklama() {
           <div className="save-books">
               <button className="liked" onClick={() => {
                 book.favourite = true
-                document.body.querySelector('.iconcha1').classList.add('color-red')
                 }}>
                 <span>Sevimlilar</span>
                 <i className='iconcha1'><FaHeart/></i>
